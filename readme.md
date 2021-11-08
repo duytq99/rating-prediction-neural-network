@@ -17,15 +17,21 @@
 ## 1. Tổng quan
 ### Giới thiệu
 #### Bài toán đặt ra
+Việc dự đoán đánh giá của người dùng cho sản phẩm rất quan trọng trong các hệ gợi ý hiện nay. Dựa trên đánh giá dự đoán này, hệ thống có thể đưa ra những đề xuất hiệu quả, góp phần làm cải thiện trải nghiệm người dùng.
+Có ba phương pháp chính: content-based, collaborative filtering và hybrid. Project này giới thiệu một mạng nơ-ron sử dụng kết hợp thông tin về người dùng và đặc trưng của phim để đưa ra ước lượng đánh giá phim tối ưu và ứng dụng vào hệ gợi ý.
 #### Tập dữ liệu MovieLens20M
-#### Mô hình mạng nơ-ron 
+[MovieLens](www.movielens.umn.edu) là trang web dành cho việc nghiên cứu hệ thống gợi ý được ra mắt vào mùa thu năm 1997. Mỗi tuần có hàng trăm người truy cập MovieLens, họ đưa ra các đánh giá và nhận lại các bộ phim được gợi ý từ hệ thống. Tải bộ dữ liệu từ [MovieLens](www.movielens.umn.edu) và lưu ở thư mục `ml-20m`.
+Tập dữ liệu này gồm các file:
+1. `genome-tags.csv`: tên thẻ genome dựa theo id
+2. `movies.csv`: mô tả thông tin bộ phim, bao gồm id, tên, thể loại
+3. `tags.csv`: mô tả tag genome cho các phim
+4. `ratings.csv`: mô tả đánh giá của người dùng
+5. `genome-scores.csv`: mô tả đặc trưng phim theo thể loại
 
+#### Mô hình mạng nơ-ron 
+Mạng nơ-ron do nhóm đề xuất có cấu trúc như sau:
 ![Mô hình mạng nơ-ron đề xuất](/images/model.png)
 
-What your application does,
-Why you used the technologies you used,
-Some of the challenges you faced and features you hope to implement in the future.
-### Cấu trúc project
 
 ## 2. Cài đặt môi trường và thư viện cần thiết
 Project này được cài đặt trên môi trưởng ảo được tạo bởi `miniconda`. Lựa chọn phiên bản phù hợp và cài đặt `miniconda` tại [link](https://docs.conda.io/en/latest/miniconda.html).
