@@ -1,0 +1,8 @@
+keras==2.6.0
+numpy==1.21.2
+pandas==1.1.5
+prettytable==2.4.0
+scikit_learn==1.0.1
+tensorflow==2.7.0
+tensorflow_cpu==2.6.1
+surprise==0.1
