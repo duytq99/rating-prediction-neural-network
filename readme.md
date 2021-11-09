@@ -52,9 +52,11 @@ Các thư viện sử dụng trong project này được liệt kê ở file [re
 
 ## 3. Cách thực hiện demo
 Tải repo này và truy cập vào thư mục chính:
-> `git clone ...`
+> `git clone https://github.com/duytq99/rating-prediction-neural-network.git`
 
-> `cd ...`
+> `cd rating-prediction-neural-network`
+
+> `conda activate <env-name>`
 ### Dự đoán rating
 Để chạy thử nghiệm cho đề tài này, trước tiên cần tải file [checkpoint](#link-to-checkpoint) lưu trọng số mô hình mạng nơ-ron và đặt vào thư mục `model_checkpoint`.
 
@@ -118,29 +120,22 @@ Enter K: 20
 
 ## 4. Đánh giá
 - MAE: Đánh giá số tuyệt đối giữa giá trị rating dự đoán và rating thực tế.
-- RMSE: Đánh giá căn bậc hai bình phương sai số giá trị rating dự đoán và rating thực tế. Hai thống số MAE và RMSE thu được qua quá trình huấn luyện sử dụng file `...`.
+- RMSE: Đánh giá căn bậc hai bình phương sai số giá trị rating dự đoán và rating thực tế. Hai thống số MAE và RMSE thu được qua quá trình huấn luyện sử dụng file `notebook\compare_SVD_KNN.ipynb`.
 
 | Mô hình  | SVD-Surprise | KNN-Surprise | Mạng nơ-ron |
 | ---------| -----------  | -----------  | ----------- |
-| MAE      |  | | |
-| RMSE     |  | | |
+| MAE      | 0.6384       | 0.6772       | 0.6279      |
+| RMSE     | 0.8262       |0.8739        | 0.8163      |
 
-- Cummulative Hit Ratio: Tỉ lệ _hit_ của mô hình gợi ý, đánh giá chất lượng của mô hình KNN (k=20). Thông số này được tính ở file `...` sử dụng phương pháp Leave-one-out.
+- Cummulative Hit Ratio: Tỉ lệ _hit_ của mô hình gợi ý, đánh giá chất lượng của mô hình KNN (k=20). Thông số này được tính ở file `notebook\KNN_hitrate.ipynb` sử dụng phương pháp Leave-one-out.
 
-| Mô hình | Split 1  | Split 2  | Split 3  | Mean    |
-| ------- | -------- | -------- | -------- |-------- | 
-| CHR     | 0.024315 | 0.023758 |  |  |
+| Mô hình | Split 1  | Split 2  |  Mean    |
+| ------- | -------- | -------- | -------- | 
+| CHR     | 0.024315 | 0.023758 | 0.24     |
 
-## 5. Thành viên
+# 5. Thành viên
 - Trần Quang Duy
 - Tôn Thất Hữu Trí 
 - Đoàn Nguyễn Nam 
 - Phan Thị Cẩm Tú
 - Nguyễn Quang lực
-
-## 6. Tài liệu tham khảo
-
-1. a
-2. 2
-3. 3
-
