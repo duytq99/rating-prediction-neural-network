@@ -58,9 +58,9 @@ Tải repo này và truy cập vào thư mục chính:
 
 > `conda activate <env-name>`
 ### Dự đoán rating
-Để chạy thử nghiệm cho đề tài này, trước tiên cần tải file [checkpoint](#link-to-checkpoint) lưu trọng số mô hình mạng nơ-ron và đặt vào thư mục `model_checkpoint`.
+Để chạy thử nghiệm cho đề tài này, trước tiên cần tải file [checkpoint](#https://drive.google.com/drive/folders/1iGjg6C3ws9QkJL_F_2otydPtpWWEhwC3?usp=sharing) lưu trọng số mô hình mạng nơ-ron và đặt vào thư mục `model_checkpoint`.
 
-Tiếp đến, tải dữ liệu [user genome](#link-to-user-genome) và [movie genome](#link-to-movie-genome) và đặt vào thư mục `data`.
+Tiếp đến, tải dữ liệu user_genome và movie_genome tại [data](#https://drive.google.com/drive/folders/13TyGwiizGIrYNhosUYfVp04J9LX30rsf?usp=sharing) và đặt vào thư mục `data`.
 
 Để thực hiện dự đoán đánh giá của người dùng `u` cho bộ phim `i`, thực thi file mã nguồn python `rating_predict` ở :
 > `python src/rating_predict.py` 
